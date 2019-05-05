@@ -1,7 +1,22 @@
 [
     {
         "name": "Simple",
-        "title": "简答例子",
-        "desc": "简答例子的一段描述。"
+        "title": "基本用法",
+        "desc": "只显示加载指示符"
+    },
+    {
+        "name": "Tips",
+        "title": "显示提示文本",
+        "desc": "设置 tips 属性，自定义提示文本。"
+    },
+    {
+        "name": "Indicator",
+        "title": "自定义指示符",
+        "desc": "设置 indicator 属性，自定义加载指示符。"
+    },
+    {
+        "name": "Size",
+        "title": "不同尺寸",
+        "desc": "内置3种不同尺寸， 设置 size 属性为 small, large, default。"
     }
 ]

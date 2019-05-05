@@ -16,31 +16,29 @@
 
 ```bash
 # yarn
-yarn add xy-spin
+yarn add xy-spin classnames
 ```
 
 ## 使用例子
 
-```ts
+```tsx
 import React from "react";
 import ReactDOM from "react-dom";
-import XySpin from "xy-spin";
-ReactDOM.render(<XySpin />, container);
+import Spin from "xy-spin";
+ReactDOM.render(<Spin spinning={true} />, container);
 ```
 
 ## API
 
-| 属性     | 说明                                                               | 类型           | 默认值    |
-| -------- | ------------------------------------------------------------------ | -------------- | --------- |
-| ghost    | 幽灵属性，使按钮背景透明                                           | boolean        | false     |
-| long     | 是否长按钮                                                         | boolean        | false     |
-| icon     | 设置按钮的图标类型                                                 | IconDefinition | -         |
-| loading  | 设置按钮载入状态                                                   | boolean        | `false`   |
-| disabled | 按钮失效状态                                                       | boolean        | `false`   |
-| shape    | 设置按钮形状，可选值为 `circle` 或者不设                           | string         | -         |
-| size     | 设置按钮大小，可选值为 `small` `large` 或者不设                    | string         | `default` |
-| type     | 设置按钮类型，可选值为 `primary` `dashed` `text` `danger` 或者不设 | string         | -         |
-| onClick  | `click` 事件的 handler                                             | function       | -         |
+| 属性      | 说明                                                               | 类型            | 默认值    |
+| --------- | ------------------------------------------------------------------ | --------------- | --------- |
+| children  | 包裹内容                                                           | React.ReactNode | -         |
+| inline    | 是否内联模式                                                       | boolean         | true      |
+| indicator | 自定义加载指示符                                                   | React.ReactNode | -         |
+| spinning  | 是否加载中                                                         | boolean         | false     |
+| size      | 设置大小，可选值为 `small` `large` 或者不设                        | string          | `default` |
+| type      | 设置按钮类型，可选值为 `primary` `dashed` `text` `danger` 或者不设 | string          | -         |
+| tips      | 自定义描述                                                         | React.ReactNode | -         |
 
 ## 开发
 

@@ -1,10 +1,10 @@
 import React from "react";
-import Hello from "../src";
+import Spin from "../src";
 
 export default function() {
     return (
         <div>
-            <Hello className="my-hello" />
+            <Spin spinning={true} />
         </div>
     );
 }
