@@ -16,7 +16,7 @@
 
 ```bash
 # yarn
-yarn add xy-spin classnames
+yarn add xy-spin
 ```
 
 ## 使用例子

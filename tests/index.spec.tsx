@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "react-testing-library";
+import { render } from "@testing-library/react";
 import Spin from "../src";
 
 describe("Spin", () => {
@@ -26,7 +26,7 @@ describe("Spin", () => {
         const wrapper = render(
             <Spin spinning={true} tips="加载中">
                 <p>包裹的内容</p>
-            </Spin>
+            </Spin>,
         );
         const content = wrapper.getByText("包裹的内容") as HTMLElement;
         expect(content.parentElement.classList.contains("xy-spin-container")).toBeTruthy();
@@ -38,7 +38,7 @@ describe("Spin", () => {
         const wrapper = render(
             <Spin spinning={true} tips="加载中">
                 包裹的内容
-            </Spin>
+            </Spin>,
         );
 
         const nesteWrap = wrapper.container.querySelector(".xy-spin-nested");
@@ -47,7 +47,7 @@ describe("Spin", () => {
         wrapper.rerender(
             <Spin spinning={true} tips="加载中" inline={false}>
                 包裹的内容
-            </Spin>
+            </Spin>,
         );
         expect(nesteWrap.classList.contains("inline")).toBeFalsy();
     });
